@@ -193,7 +193,7 @@ function App() {
         <Filter selected={payMethodFilter} setSelected={setPayMethodFilter} label='Payment Method' opt={f_payMethodFields} />
         </div>
         {/* <button onClick={resetFilter} className='filters__reset'><FontAwesomeIcon icon={faRecycle} /> <span>Reset</span></button> */}
-       {found && <div style={{textAlign:'center',color:'white'}}> <span style={{fontWeight:'bold'}}>{found}</span> profile(s) found</div>}
+       {found? <div style={{textAlign:'center',color:'white'}}> <span style={{fontWeight:'bold'}}>{found}</span> profile(s) found</div>:''}
       </div>}
 
       {maxPage>1 && <Pagination activeId={page} maxPage={maxPage} />}
