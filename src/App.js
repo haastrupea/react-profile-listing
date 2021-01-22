@@ -216,7 +216,7 @@ const Profiles = ({data}) =>{
         <div className="profile__table-row profile__table-head">
           <span className="profile__table-data">Username</span>
           <span className="profile__table-data">Gender</span>
-          <span className="profile__table-data">payment Method</span>
+          <span className="profile__table-data whitespace-nowrap">payment Method</span>
           <span className="profile__carret" style={{opacity:0}}>
             <FontAwesomeIcon
               icon={faCaretSquareDown}
