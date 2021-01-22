@@ -197,7 +197,7 @@ function App() {
       </div>}
 
       {maxPage>1 && <Pagination activeId={page} maxPage={maxPage} />}
-      {pagedata ? <Profiles data={pagedata} />: <div style={{minHeight:'100vh',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>{errorMsg?<div style={{color:'rgb(255, 67, 67)'}}><FontAwesomeIcon size='3x' icon={faExclamation} /><span>{errorMsg}</span></div>:<div style={{color:'rgba(192, 230, 244, 1)'}}><FontAwesomeIcon size='3x' className='fa fa-spin' icon={faTimes} /><span>Loading...</span></div>}</div>}
+      {pagedata ? <Profiles data={pagedata} />: <div style={{minHeight:'100vh',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>{errorMsg?<><FontAwesomeIcon color='rgb(255, 67, 67)' size='3x' icon={faExclamation} /><span style={{color:'rgb(255, 67, 67)'}} >{errorMsg}</span></>:<><FontAwesomeIcon color='rgb(65, 183, 226)' size='3x' className='fa fa-spin' icon={faTimes} /><span style={{color:'rgb(65, 183, 226)'}} >Loading...</span></>}</div>}
         {maxPage>1 && <Pagination activeId={page}  maxPage={maxPage} />}
     </div>
   );
