@@ -226,6 +226,7 @@ a{
     flex-grow: 1;
 
     &__label{
+        color: white;
         @media screen and (max-width:767px) {
             display: none;
         }
